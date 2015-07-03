@@ -1,12 +1,14 @@
 #include <iostream>
-#include "node.h"
+#include "binarysearchtree.h"
 using namespace std;
 
 int main()
 {
-    shared_ptr<Node> root = make_shared<Node>(1);
-    if(isRoot(*root))
-        cout<<"This is a root node"<<endl;
+    BinarySearchTree bst;
+    bst.insert(3);
+    bst.insert(2);
+    bst.insert(4);
+    cout<<"The size of the tree is: "<<bst.size();
     return 0;
 }
 
